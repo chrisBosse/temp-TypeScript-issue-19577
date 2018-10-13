@@ -1,5 +1,5 @@
-function test(numbers: number[]) {
-    let last;
+function testB(numbers: number[]) {
+    let last = undefined;
 
     for (const n of numbers) {
         if (n % 2) {
