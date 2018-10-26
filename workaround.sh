@@ -5,5 +5,4 @@
 # Start from this scripts directory, or bust
 cd "${BASH_SOURCE%/*}" || exit
 
-node ../TypeScript/built/local/tsc.js --noImplicitAny 19577-workaround.ts
-node ../TypeScript/built/local/tsc.js --noImplicitAny 19577-bug-trigger.ts
+node --inspect-brk=:9228 ../TypeScript/built/local/tsc.js --noImplicitAny 19577-workaround.ts
